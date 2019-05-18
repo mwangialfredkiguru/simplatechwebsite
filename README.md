@@ -36,5 +36,5 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project
     $ npm start
 
-##Inspiration from W3 Layouts
+## Inspiration from W3 Layouts
 https://w3layouts.com/marketing-a-corporate-category-bootstrap-responsive-web-template/
