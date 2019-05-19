@@ -1,33 +1,104 @@
 <% include partials/header.ejs %>
-
 <body>
 	<!-- main banner -->
 	<div class="main-top" id="home">
-        
-        <% include partials/nav.ejs %>
-
+			<% include partials/nav.ejs %>
 		<!-- banner -->
 		<div class="banner_w3lspvt-2">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="index" class="font-weight-bold">Home</a></li>
-				<li class="breadcrumb-item" aria-current="page">404 Error Page</li>
+				<li class="breadcrumb-item" aria-current="page">Contact Us</li>
 			</ol>
 		</div>
 		<!-- //banner -->
 	</div>
 	<!-- //main banner -->
 
-	<!-- 404 -->
-	<div class="error pb-5 pt-2 text-center" id="price">
+	<!-- contact -->
+	<div class="contact py-5" id="contact">
 		<div class="container pb-xl-5 pb-lg-3">
-			<img src="images/error.png" alt="" class="img-fluid" />
-			<h3 class="title-w3 text-bl my-3 font-weight-bold text-capitalize">Oops! This page can’t be found.</h3>
-			<p class="sub-tittle text-center4">Sed do eiusmod tempor incididunt ut labore et dolore magna
-				aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-			<a href="index" class="btn button-style mt-5">Back To Home</a>
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="images/b2.png" alt="image" class="img-fluid" />
+				</div>
+				<div class="col-lg-6 mt-lg-0 mt-5">
+					<!-- contact form grid -->
+					<div class="contact-top1">
+							<div class="form-group">
+									<div class="row">
+										<div class="col-md-6">
+											<label>
+													
+													
+											</label>
+										</div>
+									</div>
+								</div>
+						<form action="/contact" method="post" class="contact-wthree-do">
+							
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-6">
+										<label>
+											First name
+										</label>
+										<input class="form-control" type="text" placeholder="Anderson" name="firstname" required="">
+									</div>
+									<div class="col-md-6 mt-md-0 mt-4">
+										<label>
+											Last name
+										</label>
+										<input class="form-control" type="text" placeholder="John" name="lastname" required="">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-6">
+										<label>
+											Mobile
+										</label>
+										<input class="form-control" type="text" placeholder="xxxx xxxx xx" name="mobile" required="">
+									</div>
+									<div class="col-md-6 mt-md-0 mt-4">
+										<label>
+											Email
+										</label>
+										<input class="form-control" type="email" placeholder="example@mail.com" name="email" required="">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-12">
+										<label>
+											Your message
+										</label>
+										<textarea placeholder="Add your Description here" name="message" class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row mt-3">
+								<div class="col-md-12">
+									<button type="submit" class="btn btn-cont-w3 btn-block mt-4">Send</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- //contact form grid ends here -->
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- //404 -->
+	<!-- //contact-->
 
+	<!-- map -->
+	<div class="w3l-map p-4">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8379891226277!2d36.801469213649085!3d-1.2701539990735764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f174776c5789b%3A0x2a7a0089c916fe40!2s14+Riverside!5e0!3m2!1sen!2ske!4v1558244584820!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<!-- //map -->
+
+	<!-- footer -->
 	<% include partials/footer.ejs %>
+	<!-- //footer -->	
 </html>
